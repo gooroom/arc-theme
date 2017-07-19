@@ -1,4 +1,10 @@
-#! /usr/bin/make -f
+#!/usr/bin/make -f
+
+export DEB_BUILD_OPTIONS = nocheck
 
 %:
 	dh $@
+
+override_dh_auto_configure:
+	./autogen.sh --prefix=/usr
+
