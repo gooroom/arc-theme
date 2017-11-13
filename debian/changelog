@@ -1,3 +1,16 @@
+arc-theme (20170302+grm1u1) gooroom-1.0; urgency=medium
+
+  [ jongkyung.woo ]
+  * [ccfc5a26] Added sassc at Build-Depends
+
+  [ cjheo ]
+  * [9245b706] Modify foreground color for xfce4 panel
+  * [1fd76c05] Changed panel foreground color
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Mon, 13 Nov 2017 19:19:07 +0900
+
 arc-theme (20170302+grm1) gooroom-1.0; urgency=medium
 
   * Modify arc theme to suit gooroom platform
