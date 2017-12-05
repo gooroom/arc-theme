@@ -7,6 +7,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Arc
 MetacityTheme=Arc
-IconTheme=Arc
+IconTheme=Gooroom-Blue
 CursorTheme=DMZ-Black
 ButtonLayout=minimize,maximize,close
