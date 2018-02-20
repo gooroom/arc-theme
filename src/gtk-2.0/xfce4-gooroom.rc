@@ -1,0 +1,19 @@
+style "gooroom_plugin_popup_title" {
+  xthickness = 0
+  ythickness = 0
+
+  bg[NORMAL] = "#000000"
+  fg[NORMAL] = "#ffffff"
+}
+
+style "user_item_button" {
+  fg[NORMAL] = "#5c616c"
+}
+
+style "gooroom_plugin_button" {
+  fg[NORMAL] = "#ffffff"
+}
+
+widget "*gooroom-plugin-button*"  style "gooroom_plugin_button"
+widget "*gooroom-user-plugin-item-button*"  style "user_item_button"
+widget "*panel-popup-window-frame*"  style "gooroom_plugin_popup_title"
