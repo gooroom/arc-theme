@@ -10,10 +10,21 @@ style "user_item_button" {
   fg[NORMAL] = "#5c616c"
 }
 
-style "gooroom_plugin_button" {
-  fg[NORMAL] = "#ffffff"
+style "gooroom_showdesktop_button" {
+  xthickness = 0
+  ythickness = 0
+
+  engine "murrine" {
+    reliefstyle = 0
+    glazestyle = 0
+    glow_shade = 1.0
+    highlight_shade = 1.0
+    roundness = 0
+    gradient_shades = {1.0,1.0,1.0,1.0}
+    contrast = 15.0
+  }
 }
 
-widget "*gooroom-plugin-button*"  style "gooroom_plugin_button"
 widget "*gooroom-user-plugin-item-button*"  style "user_item_button"
 widget "*panel-popup-window-frame*"  style "gooroom_plugin_popup_title"
+widget "*gooroom-showdesktop-button*"  style "gooroom_showdesktop_button"
