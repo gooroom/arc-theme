@@ -1,3 +1,17 @@
+arc-theme (20170302+grm1u2) gooroom-1.0; urgency=medium
+
+  [ Heo, ChangJu ]
+  * [5b22962d] Changing the icon theme from Arc to Gooroom-Blue
+
+  [ cjheo ]
+  * [10b88f22] Changing the foreground color of panel
+  * [74065e55] Adding gtk2 theme for xfce4 panel plugin button
+  * [85884036] Updating xfce4-gooroom.rc for panel plugin
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Wed, 14 Mar 2018 18:16:23 +0900
+
 arc-theme (20170302+grm1u1) gooroom-1.0; urgency=medium
 
   [ jongkyung.woo ]
