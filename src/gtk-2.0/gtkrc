@@ -12,6 +12,7 @@ gtk-color-scheme = "notebook_bg: #ffffff"
 gtk-color-scheme = "dark_sidebar_bg: #353945"
 gtk-color-scheme = "link_color: #5294e2"
 gtk-color-scheme = "menu_bg: #ffffff"
+gtk-color-scheme = "panel_bg: #2b2e37"
 
 gtk-icon-sizes = "gtk-button=16,16" # This makes button icons smaller.
 gtk-auto-mnemonics = 1
@@ -23,3 +24,4 @@ include "panel.rc"
 include "xfce-notify.rc"
 include "menubar-toolbar/menubar-toolbar.rc"
 include "xfce4-gooroom.rc"
+include "gnome-flashback-gooroom.rc"
