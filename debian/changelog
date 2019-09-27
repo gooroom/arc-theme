@@ -1,44 +1,80 @@
-arc-theme (20170302+grm1u3) gooroom-1.0; urgency=medium
+arc-theme (20181022-1+dev28~1.gbp6add5b) unstable; urgency=medium
+
+  ** SNAPSHOT build @6add5be0812e288deb348a82607809b9d059ebd1 **
 
   [ cjheo ]
-  * [5b11b7b1] Added CSS for GNOME Panel
+  * Added patch for modifying build options
+  * Added patch to modify CSS for panelbutton
+  * Added patch for gooroom-applauncher-applet
+  * Added patch for panel applet CSS
+  * Added patch for gooroom-integration-applet
+  * Added patch for gooroom-notifyd
+  * Updating CSS #1
+  * Updating panelbutton CSS
+  * Updating CSS for gooroom-applauncher-applet
+  * Update CSS for gooroom-notifyd
+  * Updating panelbutton CSS
+  * Modify theme for panelbutton
+  * Modify theme for applauncher panel button
+  * Modify theme for gooroom-integration-applet
+  * Modify theme for panelbutton
+  * Changed minimum height of popup window for gooroom-integration-applet
+  * Update padding size of tray icon
+  * Adjust padding size of panelbutton and tray
+
+  [ user ]
+  * Update scss for panelbutton and applauncher-button
+  * Update scss for directory-item in applauncher
+  * Update gooroom-integration-applet-scss.patch for calendar css
 
   [ Gooroom Autobuilder ]
 
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Tue, 15 Jan 2019 12:18:41 +0900
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 27 Sep 2019 15:06:15 +0900
 
-arc-theme (20170302+grm1u2) gooroom-1.0; urgency=medium
+arc-theme (20181022-1) unstable; urgency=medium
 
-  [ Heo, ChangJu ]
-  * [5b22962d] Changing the icon theme from Arc to Gooroom-Blue
+  * New upstream release
+  * Drop path 0001-Prepare-for-GNOME-3.30-and-Gtk-3.24-99-100.patch since
+    now incorporated in the release
+  * Packaging Changes
+    - rules add override to build theme with current unstable version of
+      gnome-shell
 
-  [ cjheo ]
-  * [10b88f22] Changing the foreground color of panel
-  * [74065e55] Adding gtk2 theme for xfce4 panel plugin button
-  * [85884036] Updating xfce4-gooroom.rc for panel plugin
+ -- David Mohammed <fossfreedom@ubuntu.com>  Mon, 22 Oct 2018 19:44:08 +0100
 
-  [ Gooroom Autobuilder ]
+arc-theme (20180715-1) unstable; urgency=medium
 
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Wed, 14 Mar 2018 18:16:23 +0900
+  * New upstream version 20180715
+  * patch 0001-Prepare-for-GNOME-3.30-and-Gtk-3.24-99-100.patch
+    - build for GTK+3.24 (Closes: #908210)
+  * Packaging Changes
+    - control: Bump Standards-Version; rules made more verbose
+    - control: Revise build-dependencies to reflect upstream changes
+    - control: Add GTK+ runtime dependency to reflect addition of
+      3.24 patch addition
+    - control: Update runtime dependency to reflect new updated GNOME
+      package name
 
-arc-theme (20170302+grm1u1) gooroom-1.0; urgency=medium
+ -- David Mohammed <fossfreedom@ubuntu.com>  Fri, 7 Sep 2018 12:16:50 +0100
 
-  [ jongkyung.woo ]
-  * [ccfc5a26] Added sassc at Build-Depends
+arc-theme (20180114-1) unstable; urgency=medium
 
-  [ cjheo ]
-  * [9245b706] Modify foreground color for xfce4 panel
-  * [1fd76c05] Changed panel foreground color
+  * New upstream release
+  * Packaging changes:
+    - Previous upload was to experimental since Debian was in package
+      freeze for Stretch.  This release is to unstable since the archive
+      is now unfrozen
+    - Update upstream details in debian/upstream/metadata
+    - debian/copyright Revise copyright details for 2018 year change and
+      upstream details
+    - debian/copyright change debian packaging from GPL-3+ to GPL-2+
+    - debian/copyright remove obsolete gnome-shell files
+    - debian/watch updated for upstream repository
+    - debian/control add build dependency sassc
+    - debian/control change Priority from extra to optional
+    - debian/control bumped Standards-Version; no changes required
 
-  [ Gooroom Autobuilder ]
-
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Mon, 13 Nov 2017 19:19:07 +0900
-
-arc-theme (20170302+grm1) gooroom-1.0; urgency=medium
-
-  * Modify arc theme to suit gooroom platform
-
- -- gooroom <gooroom@gooroom.kr>  Wed, 19 Jul 2017 18:59:55 +0900
+ -- David Mohammed <fossfreedom@ubuntu.com>  Sun, 14 Jan 2018 13:20:54 +0000
 
 arc-theme (20170302-2) experimental; urgency=medium
 
@@ -77,7 +113,7 @@ arc-theme (20161005-1) unstable; urgency=medium
     - Fix Unity window decorations with GTK+ 3.20
     - Minor bugfixes
   * Packaging Changes
-    - update debian/upstream/metadata to remove non-recommended 
+    - update debian/upstream/metadata to remove non-recommended
       homepage field (Closes: #838988)
     - update homepage url in debian/control
 
@@ -98,7 +134,7 @@ arc-theme (20160923-1) unstable; urgency=medium
 
 arc-theme (20160605-2) unstable; urgency=medium
 
-  * Include Arc's plank GTK+ option for each theme variant 
+  * Include Arc's plank GTK+ option for each theme variant
 
  -- David Mohammed <foss.freedom@gmail.com>  Wed, 06 Jul 2016 20:15:15 +0100
 

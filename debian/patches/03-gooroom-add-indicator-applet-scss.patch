@@ -1,0 +1,20 @@
+diff --git a/common/gtk-3.0/3.20/sass/_gooroom-indicator-applet.scss b/common/gtk-3.0/3.20/sass/_gooroom-indicator-applet.scss
+new file mode 100644
+index 0000000..fbb1c4a
+--- /dev/null
++++ b/common/gtk-3.0/3.20/sass/_gooroom-indicator-applet.scss
+@@ -0,0 +1,5 @@
++#gooroom-indicator-applet-button {
++  color: #ffffff;
++  label, image { color: inherit; }
++}
++
+diff --git a/common/gtk-3.0/3.20/sass/gtk.scss b/common/gtk-3.0/3.20/sass/gtk.scss
+index 1530d7b..1928a11 100644
+--- a/common/gtk-3.0/3.20/sass/gtk.scss
++++ b/common/gtk-3.0/3.20/sass/gtk.scss
+@@ -13,3 +13,4 @@ $transparency: 'true';
+ @import 'colors-public';
+ @import 'budgie';
+ @import 'gooroom-applauncher-applet';
++@import 'gooroom-indicator-applet';
