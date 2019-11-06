@@ -1,35 +1,8 @@
-arc-theme (20181022-1+dev28~1.gbp6add5b) unstable; urgency=medium
+arc-theme (20181022-1+grm2) unstable; urgency=medium
 
-  ** SNAPSHOT build @6add5be0812e288deb348a82607809b9d059ebd1 **
+ * Released Version 20191106
 
-  [ cjheo ]
-  * Added patch for modifying build options
-  * Added patch to modify CSS for panelbutton
-  * Added patch for gooroom-applauncher-applet
-  * Added patch for panel applet CSS
-  * Added patch for gooroom-integration-applet
-  * Added patch for gooroom-notifyd
-  * Updating CSS #1
-  * Updating panelbutton CSS
-  * Updating CSS for gooroom-applauncher-applet
-  * Update CSS for gooroom-notifyd
-  * Updating panelbutton CSS
-  * Modify theme for panelbutton
-  * Modify theme for applauncher panel button
-  * Modify theme for gooroom-integration-applet
-  * Modify theme for panelbutton
-  * Changed minimum height of popup window for gooroom-integration-applet
-  * Update padding size of tray icon
-  * Adjust padding size of panelbutton and tray
-
-  [ user ]
-  * Update scss for panelbutton and applauncher-button
-  * Update scss for directory-item in applauncher
-  * Update gooroom-integration-applet-scss.patch for calendar css
-
-  [ Gooroom Autobuilder ]
-
- -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 27 Sep 2019 15:06:15 +0900
+ -- jongkyung.woo <jkwoo@gooroom.kr>  Wed, 06 Nov 2019 15:17:39 +0900
 
 arc-theme (20181022-1) unstable; urgency=medium
 
