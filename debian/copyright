@@ -1,9 +1,12 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: arc-theme
-Source: https://github.com/horst3180/arc-theme
+Upstream-Source: https://github.com/horst3180/arc-theme
+Source: https://github.com/gooroom/arc-theme
+
 
 Files: *
 Copyright: 2016-2017, horst3180 <email address hidden>
+           2017-2018, Nicohood <mail@nicohood.de> and David Mohammed <fossfreedom@ubuntu.com>
+           2015-2019, Gooroom <gooroom@gooroom.kr>
 License: GPL-3+
 
 Files: common/gnome-shell/3.14/gnome-shell.css
