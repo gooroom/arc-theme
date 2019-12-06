@@ -1,3 +1,12 @@
+arc-theme (20170302+grm1u4) gooroom-1.0; urgency=medium
+
+  [ cjheo ]
+  * [209ce0d9] Update copyright
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 06 Dec 2019 11:05:33 +0900
+
 arc-theme (20170302+grm1u3) gooroom-1.0; urgency=medium
 
   [ cjheo ]
