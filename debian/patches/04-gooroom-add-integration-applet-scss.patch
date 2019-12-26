@@ -1,9 +1,9 @@
 diff --git a/common/gtk-3.0/3.20/sass/_gooroom-integration-applet.scss b/common/gtk-3.0/3.20/sass/_gooroom-integration-applet.scss
 new file mode 100644
-index 0000000..7dd4a7f
+index 0000000..7d9aa85
 --- /dev/null
 +++ b/common/gtk-3.0/3.20/sass/_gooroom-integration-applet.scss
-@@ -0,0 +1,108 @@
+@@ -0,0 +1,106 @@
 +* {
 +  -gtk-icon-shadow: none;
 +  -gtk-icon-effect: none;
@@ -17,8 +17,6 @@ index 0000000..7dd4a7f
 +#GooroomIntegrationWindow {
 +  #main-box {
 +    min-width: 420px;
-+    min-height:360px;
-+    padding: 30px 20px;
 +    border: none;
 +    border-radius: 8px;
 +    border-image: none;
