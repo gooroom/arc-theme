@@ -1,9 +1,9 @@
 diff --git a/common/gtk-3.0/3.20/sass/_gooroom-applauncher-applet.scss b/common/gtk-3.0/3.20/sass/_gooroom-applauncher-applet.scss
 new file mode 100644
-index 0000000..a6ccb50
+index 0000000..f12df8f
 --- /dev/null
 +++ b/common/gtk-3.0/3.20/sass/_gooroom-applauncher-applet.scss
-@@ -0,0 +1,121 @@
+@@ -0,0 +1,119 @@
 +* {
 +  -gtk-icon-shadow: none;
 +  -gtk-icon-effect: none;
@@ -34,8 +34,6 @@ index 0000000..a6ccb50
 +
 +#GooroomApplauncherWindow {
 +  #directory-item-box {
-+    min-width: 300px;
-+    min-height: 400px;
 +    border: none;
 +    border-radius: 8px;
 +    border-image: none;
