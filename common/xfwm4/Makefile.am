@@ -17,7 +17,11 @@ $(light): $(srcdir)/light/assets.svg | light/assets
 $(dark): $(srcdir)/dark/assets.svg | dark/assets
 
 $(light) $(dark):
+if INKSCAPE_1_0_OR_NEWER
+	$(INKSCAPE) --export-id-only --export-filename="$@" --export-id="$(basename $(notdir $@))" --export-dpi=$(if $(filter $(OPTION_GTK2_HIDPI),true),192,96) "$<" >/dev/null
+else !INKSCAPE_1_0_OR_NEWER
 	$(INKSCAPE) --export-id-only --export-png="$@" --export-id="$(basename $(notdir $@))" --export-dpi=$(if $(filter $(OPTION_GTK2_HIDPI),true),192,96) "$<" >/dev/null
+endif
 	$(OPTIPNG) -o7 --quiet "$@"
 
 .PHONY: light dark clean
@@ -35,6 +39,11 @@ endif
 if ENABLE_DARK
 xfwm4themedarkdir = $(themedarkdir)/xfwm4
 xfwm4themedark_DATA = $(srcdir)/dark/themerc $(dark)
+endif
+
+if ENABLE_LIGHTER
+xfwm4themelighterdir = $(themelighterdir)/xfwm4
+xfwm4themelighter_DATA = $(srcdir)/light/themerc $(light)
 endif
 
 EXTRA_DIST = \

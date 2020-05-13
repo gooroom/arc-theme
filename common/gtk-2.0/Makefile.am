@@ -35,7 +35,11 @@ $(light): $(srcdir)/light/assets.svg | light/assets
 $(dark): $(srcdir)/dark/assets.svg | dark/assets
 
 $(light) $(dark):
+if INKSCAPE_1_0_OR_NEWER
+	$(INKSCAPE) --export-id-only --export-filename="$@" --export-id="$(basename $(notdir $@))" --export-dpi=$(if $(filter $(OPTION_GTK2_HIDPI),true),192,96) "$<" >/dev/null
+else !INKSCAPE_1_0_OR_NEWER
 	$(INKSCAPE) --export-id-only --export-png="$@" --export-id="$(basename $(notdir $@))" --export-dpi=$(if $(filter $(OPTION_GTK2_HIDPI),true),192,96) "$<" >/dev/null
+endif
 	$(OPTIPNG) -o7 --quiet "$@"
 
 menubar-toolbar/%-dark.png: dark/assets/%.png | menubar-toolbar
@@ -70,9 +74,17 @@ gtk2themedarkassets_DATA = $(dark)
 nobase_gtk2themedark_DATA = $(mbt_dark)
 endif
 
+if ENABLE_LIGHTER
+gtk2themelighterdir = $(themelighterdir)/gtk-2.0
+gtk2themelighterassetsdir = $(gtk2themelighterdir)/assets
+gtk2themelighter_DATA = $(srcrc) $(srcdir)/lighter/gtkrc
+gtk2themelighterassets_DATA = $(light)
+nobase_gtk2themelighter_DATA = $(mbt_light)
+endif
+
 EXTRA_DIST = \
 	assets.txt \
 	$(srcrc) \
 	$(patsubst %,%/assets.svg,light dark) \
-	$(patsubst %,%/gtkrc,light darker dark) \
+	$(patsubst %,%/gtkrc,light darker dark lighter) \
 	$(patsubst %,menubar-toolbar/menubar-toolbar%,.rc -dark.rc)

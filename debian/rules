@@ -5,11 +5,4 @@ export DH_VERBOSE = 1
 	dh $@
 
 override_dh_auto_configure:
-	dh_auto_configure -- --disable-gnome-shell \
-	--disable-darker \
-	--disable-dark \
-	--disable-cinnamon \
-	--disable-unity \
-	--disable-xfwm \
-	--disable-plank \
-	--disable-openbox
+	dh_auto_configure -- --with-gnome-shell=3.36 --with-cinnamon=4.0
