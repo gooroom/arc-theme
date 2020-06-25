@@ -1,0 +1,22 @@
+diff --git a/common/gtk-3.0/3.24/sass/_applications.scss b/common/gtk-3.0/3.24/sass/_applications.scss
+index 697d083..9ef10db 100644
+--- a/common/gtk-3.0/3.24/sass/_applications.scss
++++ b/common/gtk-3.0/3.24/sass/_applications.scss
+@@ -139,14 +139,17 @@ $disk_space_free: darken($bg_color, 3%);
+   &.unknown {
+     background-color: $disk_space_unknown;
+     border-color: darken($disk_space_unknown, 10%);
++    color: $disk_space_unknown;
+   }
+   &.used {
+     background-color: $disk_space_used;
+     border-color: darken($disk_space_used, 10%);
++    color: $disk_space_used;
+   }
+   &.free {
+     background-color: $disk_space_free;
+     border-color: darken($disk_space_free, 10%);
++    color: $disk_space_free;
+   }
+ }
+ 

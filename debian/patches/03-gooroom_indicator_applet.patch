@@ -1,0 +1,47 @@
+diff --git a/common/gtk-3.0/3.24/sass/_gooroom-indicator-applet.scss b/common/gtk-3.0/3.24/sass/_gooroom-indicator-applet.scss
+new file mode 100644
+index 0000000..fbb1c4a
+--- /dev/null
++++ b/common/gtk-3.0/3.24/sass/_gooroom-indicator-applet.scss
+@@ -0,0 +1,5 @@
++#gooroom-indicator-applet-button {
++  color: #ffffff;
++  label, image { color: inherit; }
++}
++
+diff --git a/common/gtk-3.0/3.24/sass/gtk-dark.scss b/common/gtk-3.0/3.24/sass/gtk-dark.scss
+index 05d6a3d..e07eb49 100644
+--- a/common/gtk-3.0/3.24/sass/gtk-dark.scss
++++ b/common/gtk-3.0/3.24/sass/gtk-dark.scss
+@@ -12,3 +12,4 @@ $transparency: 'true';
+ @import 'colors-public';
+ @import 'budgie';
+ @import 'gooroom-applauncher-applet';
++@import 'gooroom-indicator-applet';
+diff --git a/common/gtk-3.0/3.24/sass/gtk-darker.scss b/common/gtk-3.0/3.24/sass/gtk-darker.scss
+index f7f4dbe..f8cef6b 100644
+--- a/common/gtk-3.0/3.24/sass/gtk-darker.scss
++++ b/common/gtk-3.0/3.24/sass/gtk-darker.scss
+@@ -12,3 +12,4 @@ $transparency: 'true';
+ @import 'colors-public';
+ @import 'budgie';
+ @import 'gooroom-applauncher-applet';
++@import 'gooroom-indicator-applet';
+diff --git a/common/gtk-3.0/3.24/sass/gtk-lighter.scss b/common/gtk-3.0/3.24/sass/gtk-lighter.scss
+index 0b71251..3afb7c9 100644
+--- a/common/gtk-3.0/3.24/sass/gtk-lighter.scss
++++ b/common/gtk-3.0/3.24/sass/gtk-lighter.scss
+@@ -12,3 +12,4 @@ $transparency: 'true';
+ @import 'colors-public';
+ @import 'budgie';
+ @import 'gooroom-applauncher-applet';
++@import 'gooroom-indicator-applet';
+diff --git a/common/gtk-3.0/3.24/sass/gtk.scss b/common/gtk-3.0/3.24/sass/gtk.scss
+index e16162b..a694d9e 100644
+--- a/common/gtk-3.0/3.24/sass/gtk.scss
++++ b/common/gtk-3.0/3.24/sass/gtk.scss
+@@ -12,3 +12,4 @@ $transparency: 'true';
+ @import 'colors-public';
+ @import 'budgie';
+ @import 'gooroom-applauncher-applet.scss';
++@import 'gooroom-indicator-applet';
