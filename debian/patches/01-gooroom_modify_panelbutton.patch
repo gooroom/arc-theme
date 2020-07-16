@@ -36,9 +36,9 @@ index 5b13cec..697d083 100644
 -    -NaTrayApplet-icon-size: 16px;
 -  }
 +na-tray-applet {
-+  -NaTrayApplet-icon-padding: 10px;
++  -NaTrayApplet-icon-padding: 5px;
 +  -NaTrayApplet-icon-size: 24px;
-+  -NaApplet-icon-padding: 10px;
++  -NaApplet-icon-padding: 5px;
 +  -NaApplet-icon-size: 24px;
  }
  
