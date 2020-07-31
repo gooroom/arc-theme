@@ -1,3 +1,12 @@
+arc-theme (20200513-1+grm2u2) unstable; urgency=medium
+
+  [ cjheo ]
+  * [3529c6e2] Adjust tray icon padding
+
+  [ Gooroom Autobuilder ]
+
+ -- Gooroom Autobuilder <jenkins@gooroom.kr>  Fri, 31 Jul 2020 10:09:50 +0900
+
 arc-theme (20200513-1+grm2u1) unstable; urgency=medium
 
   [ cjheo ]
