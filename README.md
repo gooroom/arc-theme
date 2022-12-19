@@ -28,34 +28,36 @@ This fork aims to keep the theme updated with new toolkit and desktop environmen
 
 Arc comes with themes for the following:
 * GTK 2
-* GTK 3 >=3.18
-* GNOME Shell >=3.18
-* Cinnamon >=2.8
+* GTK 3
+* GTK 4
+* GNOME Shell >=3.28
+* Cinnamon >=3.8
 * Unity
 * Metacity
 * Xfwm
-* Openbox
 * Plank
 
 ## Installation
 
 #### Packages
 
-Distribution | Package name | Notes
--------|-------|-------
-Arch Linux | [arc-gtk-theme-jnsh-git](https://aur.archlinux.org/packages/arc-gtk-theme-jnsh-git/) | [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) package
-Debian (bullseye) | [arc-theme](https://packages.debian.org/bullseye/arc-theme) | 
-Gentoo | [arc-theme](https://packages.gentoo.org/packages/x11-themes/arc-theme) | 
+Arc Theme is available from the official software package repositories for many common Linux distributions and FOSS operating systems. Installing the theme by using the package manager of your operating system should be the preferred method in most cases.
 
-***Note:*** Other Arc Theme distribution packages are not necessarily built from this repository.
+See [the wiki](https://github.com/jnsh/arc-theme/wiki/Packages) for non-exhaustive list of distribution packages, and some additional packages.
 
 #### Manual installation
 
-See [INSTALL.md](https://github.com/jnsh/arc-theme/blob/master/INSTALL.md) for build instructions, list of dependencies, build options and additional details.
+For installing the theme by compiling it from the source code, see [INSTALL.md](https://github.com/jnsh/arc-theme/blob/master/INSTALL.md) for build instructions, list of dependencies, build options and additional details.
 
-## Bugs
+## Issues
 
-If you find a bug, or have a suggestion for improving the theme, please open an issue at <https://github.com/jnsh/arc-theme/issues>.
+If you are experiencing any kind of issues, found a bug, or have a suggestion for improving the theme, please open an issue at <https://github.com/jnsh/arc-theme/issues>.
+
+Some known issues are addressed in [common problems](https://github.com/jnsh/arc-theme/wiki/Common-problems).
+
+## Contributing
+
+If you'd like to contribute to the project, open an pull request, or an issue for discussion. See [HACKING.md](https://github.com/jnsh/arc-theme/blob/master/HACKING.md) for further details.
 
 ## License
 
