@@ -1,0 +1,58 @@
+diff --git a/common/gtk-3.0/sass/_applications.scss b/common/gtk-3.0/sass/_applications.scss
+index f46551f..8ca0ed6 100644
+--- a/common/gtk-3.0/sass/_applications.scss
++++ b/common/gtk-3.0/sass/_applications.scss
+@@ -894,9 +894,9 @@ panel-toplevel.background {
+   transition: none;
+ 
+   &:hover {
+-    color: if($variant == 'lighter', darken($panel_fg, 10%), lighten($panel_fg, 10%));
++    color: if($variant == 'lighter', darken($panel_fg, 10%), white);
+     border: none;
+-    background-color: if($variant == 'lighter', transparentize(black, 0.9), transparentize(black, 0.83));
++    background-color: if($variant == 'lighter', transparentize(white, 0.9), transparentize(white, 0.83));
+   }
+ }
+ 
+@@ -909,10 +909,12 @@ panel-toplevel.background {
+ }
+ 
+ %panelbutton {
++  padding:0 10px;
++
+   &:active, &:checked {
+-    color: $selected_fg_color;
+-    border: none;
+-    background-color: $selected_bg_color;
++    color: if($variant == 'lighter', darken($panel_fg, 10%), white);
++    background-color: if($variant == 'lighter', transparentize(black, 0.85), transparentize($panel_bg, 1));
++    box-shadow: inset 0 -2px $selected_bg_color;
+ 
+     label, image { color: inherit; }
+   }
+diff --git a/common/gtk-3.0/sass/_colors.scss b/common/gtk-3.0/sass/_colors.scss
+index 49f9c18..1060d3d 100644
+--- a/common/gtk-3.0/sass/_colors.scss
++++ b/common/gtk-3.0/sass/_colors.scss
+@@ -62,7 +62,7 @@ $dark_sidebar_border: $dark_sidebar_bg;
+ }
+ 
+ $panel_bg: darken($dark_sidebar_bg, 4.7%);
+-$panel_fg: $dark_sidebar_fg;
++$panel_fg: #FFFFFF;
+ 
+ $entry_bg: if($variant != 'dark', $base_color, lighten($base_color, 0%));
+ $entry_border: if($variant != 'dark', #cfd6e6, darken($borders_color, 0%));
+diff --git a/common/gtk-4.0/sass/_colors.scss b/common/gtk-4.0/sass/_colors.scss
+index 49f9c18..1060d3d 100644
+--- a/common/gtk-4.0/sass/_colors.scss
++++ b/common/gtk-4.0/sass/_colors.scss
+@@ -62,7 +62,7 @@ $dark_sidebar_border: $dark_sidebar_bg;
+ }
+ 
+ $panel_bg: darken($dark_sidebar_bg, 4.7%);
+-$panel_fg: $dark_sidebar_fg;
++$panel_fg: #FFFFFF;
+ 
+ $entry_bg: if($variant != 'dark', $base_color, lighten($base_color, 0%));
+ $entry_border: if($variant != 'dark', #cfd6e6, darken($borders_color, 0%));
